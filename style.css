@@ -1,0 +1,1082 @@
+*{
+ margin: 0;
+ padding: 0;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../solo-traveller-woman.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000000 ;
+}
+ul li.active a{
+    background-color: #fff;
+    color: #000000 ;
+}
+
+.logo img{
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.secondTitle{
+    position: absolute;
+    font-size:60px;
+    
+    transform: translate(0%,-50%,20%);
+}
+
+.section-heading {
+    padding: 0 0 50px 0;
+    padding-top: 80px;
+    
+}
+
+.section-subtitle {
+    font-size: 18px;
+    
+}
+
+.section-heading h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+}
+
+.title h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+#myDiv{
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20%;
+    color: blanchedalmond;
+}
+.btn3{
+    border: 1px solid black;
+    padding: 10px 25px;
+    color: burlywood;
+    text-decoration: none;
+    margin-right:center;
+    transition: 0.6s ease;
+    top: 50%;
+    
+    
+}
+
+
+.button{
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    
+}
+
+.btn{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    color: #fff;
+    text-decoration: none;
+    margin-right:16px;
+    transition: 0.6s ease;
+    display: none;
+}
+.btn1{
+    border: 1px solid #fff;
+    padding: 10px 40px;
+    color: #fff;
+    text-decoration: none;
+    margin-right:0px;
+    transition: 0.6s ease;
+    display: none;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000000 ;
+}
+
+.social_icon{
+    
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);    
+    
+}
+
+.content{
+
+}
+
+
+
+/* Play Button */
+
+#video-
+ {
+    position:relative;
+}
+
+.play-video {
+    height:110px;
+    position:absolute;
+    top:50%;
+    margin-top:-110px;
+    width:100%;
+}
+
+.play-icon {
+    display: inline-block;
+    font-size: 0px;
+    cursor: pointer;
+    margin: 45px auto;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.play-icon:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.play-icon:before {
+    font-family: 'fontawesome';
+    content: '\f144';
+    speak: none;
+    font-size: 74px;
+    line-height: 110px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+    color:#fff;
+}
+
+.play-video .play-icon {
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-transition: -webkit-transform ease-out 0.3s, background 0.4s;
+    -moz-transition: -moz-transform ease-out 0.3s, background 0.4s;
+    transition: transform ease-out 0.3s, background 0.4s;
+}
+
+.play-video .play-icon:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.play-video .play-icon:hover {
+    background: rgba(255, 255, 255, 0.05);
+    -webkit-transform: scale(0.93);
+    -moz-transform: scale(0.93);
+    -ms-transform: scale(0.93);
+    transform: scale(0.93);
+    color: #fff;
+}
+
+/* --------- 6.1 Introduction ---------- */
+
+.introduction img.featured {
+    padding: 55px 0 0 0;
+}
+
+/* --------- 6.2 Features ---------- */
+
+.features.row {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.features div:nth-child(4) {
+    clear: both;
+}
+
+/* --------- 6.3 Testimonials ---------- */
+
+.testimonial {
+    padding: 15px;
+}
+
+blockquote {
+    position: relative;
+}
+
+.testimonial img {
+    max-height: 120px;
+    border-radius: 250em;
+}
+
+.testimonial footer {
+    padding-top: 12px;
+}
+
+/* Style Classic - Avatar above Testimonial */
+
+.testimonial.classic img {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.testimonial.classic q {
+    display: block;
+}
+
+.testimonial.classic footer:before {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    margin: 10px auto 15px auto;
+}
+
+/* Style Big */
+
+.testimonial.bigtest {
+    padding-top: 0;
+}
+
+.testimonial.bigtest q {
+    font-size: 22px;
+}
+
+
+* contains the content */
+    .featherlight .featherlight-inner {
+        /* make sure its visible */
+        display: block;
+    }
+
+    .featherlight .featherlight-close-icon {
+        /* position: centering vertical and horizontal */
+        position: absolute;
+        z-index: 9999;
+        top: 25px;
+        right: 25px;
+
+        /* dimensions: 25px x 25px */
+        line-height: 25px;
+        width: 25px;
+
+        /* styling */
+        cursor: pointer;
+        text-align: center;
+        color: #fff;
+        font-family: "fontawesome";
+        font-size: 22px;
+        opacity: 0.5;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
+
+    .featherlight .featherlight-close-icon:hover {
+        opacity: 1;
+    }
+
+    .featherlight .featherlight-image {
+        /* styling */
+        max-height: 100%;
+        max-width:100%;
+    }
+
+    .featherlight-iframe .featherlight-content {
+        /* removed the border for image croping since iframe is edge to edge */
+        border-bottom: 0;
+        padding: 0;
+    }
+
+    .featherlight iframe {
+        /* styling */
+        border: none;
+    }
+
+
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+    .featherlight .featherlight-content {
+        /* dimensions: maximize lightbox with for small screens */
+        margin-left: 10px;
+        margin-right: 10px;
+        max-height: 98%;
+
+        padding: 10px 10px 0;
+        border-bottom: 10px solid transparent;
+    }
+
+}
+/* --------- 6.5 Video ---------- */
+
+#video-box {
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    text-align:center;
+}
+
+.video_container, .easyContainer {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    margin: 0;
+    padding-top: 0; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.video_container iframe, .video_container object, .video_container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
+    width: 100% !important;
+    height: 529px !important;
+}
+
+.videojs-background-wrap {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -998;
+}
+
+#slvj-window {
+    width: 100%;
+    min-height: 100%;
+    z-index: 9999999999;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#slvj-window,
+#slvj-window * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#slvj-background-close {
+    width: 100%;
+    min-height: 100%;
+    z-index: 31;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#slvj-back-lightbox {
+    max-width: 940px;
+    max-height: 529px;
+    z-index: 32;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.slvj-lightbox {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 53;
+}
+
+#slvj-close-icon:before {
+    font-family: "fontawesome";
+    color: #fff;
+    content: '\f00d';
+    font-size: 22px;
+    opacity: 0.5;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 99999;
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#slvj-close-icon:before:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* --------- 6.6 Clients ---------- */
+
+#clients a {
+    display: block;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+#clients img {
+    display: inline-block;
+    padding: 15px 25px;
+}
+
+.client-overlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#clients a:hover .client-overlay {
+    opacity: 1;
+}
+
+.client-overlay span {
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #wrapper {
+        margin:0;
+        padding:0;
+    }
+
+    .page-border {
+        display:none;
+    }
+
+    .big-padding-top {
+        padding-top: 45px !important;
+    }
+}
+
+
+
+/* Main Widths */
+
+.col-1 {
+    width: 100%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 100%;
+    
+}
+
+.col-4 {
+    width: 25%;
+}
+
+.col-5 {
+    width: 20%;
+}
+
+.col-6 {
+    width: 16.6666666667%;
+}
+
+.col-7 {
+    width: 14.2857142857%;
+}
+
+.col-8 {
+    width: 12.5%;
+}
+
+.col-9 {
+    width: 11.1111111111%;
+}
+
+.col-10 {
+    width: 10%;
+}
+
+.col-11 {
+    width: 9.09090909091%;
+}
+
+.col-12 {
+    width: 8.33%;
+}
+
+.col-2-3 {
+    width: 66.66%;
+}
+
+.col-3-4 {
+    width: 75%;
+}
+
+.col-9-10 {
+    width: 90%;
+}
+
+/* Golden Ratio */
+.col-61 {
+    width: 61.8%;
+}
+
+.col-38 {
+    width: 38.2%;
+}
+
+
+
+/* Landscape mobile & down
+===============================*/
+@media (max-width: 480px) {
+
+    #wrapper {
+        margin:0;
+        padding:0;
+    }
+
+    .page-border, #scrollUp, #scrollUp:before {
+        display:none;
+    }
+
+    .row {
+        padding: 15px !important;
+    }
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-2-3, .col-3-4, .col-9-10, .col-61, .col-38, .row {
+        width: 100%;
+    }
+
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-2-3, .col-3-4, .col-9-10, .col-61, .col-38 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    
+    /*Logo*/
+    #logo h2 {
+        padding: 0;
+    }
+
+    /* Social */
+    #header aside {
+        clear: both;
+        padding: 0;
+    }
+
+    #header ul.social-icons {
+        margin-top: 0;
+    }
+
+    #banner-content.row {
+        padding-top: 85px !important;
+    }
+
+    /*-----------------Sections-----------------*/
+
+    /* Call to Action*/
+    .call-to-action {
+        padding-bottom: 25px;
+    }
+
+    /* Video */
+    .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
+        height: 270px !important;
+    }
+
+    /* Footer */
+    #landing-footer #copyright {
+        float: left;
+        width: 50%;
+    }
+
+    #landing-footer .social-icons {
+        float: right;
+        width: 50%;
+    }
+
+    /*-----------------Typography-----------------*/
+    h1 {
+        font-size: 38px;
+    }
+
+    #banner h1 {
+        font-size: 48px;
+    }
+
+    /* Hide Elements */
+    a#scrollUp {
+        display: none !important;
+    }
+
+}
+/* Landscape Tablet to Desktop
+===============================*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #wrapper {
+        margin:0;
+        padding:0;
+    }
+
+    .page-border {
+        display:none;
+    }
+
+    .big-padding-top {
+        padding-top: 45px !important;
+    }
+
+    /*-----------------Header Elements-----------------*/
+    #header aside {
+        display: inline-block;
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        padding-top:3px;
+        padding-right: 5px;
+    }
+
+    #header.nav-solid aside {
+        top: 20px;
+    }
+
+    #header aside ul {
+        margin-top: 0 !important;
+        padding-top: 6px;
+    }
+
+    /*Navigation*/
+    nav#nav-mobile ul {
+        margin-left: -40px;
+        margin-right: -40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /*-----------------Sections-----------------*/
+
+    /* Video */
+    .slvj-lightbox iframe, .slvj-lightbox object, .slvj-lightbox embed {
+        height: 432px !important;
+    }
+
+}
+
+/* --------- 6.1 Introduction ---------- */
+
+.introduction img.featured {
+    padding: 55px 0 0 0;
+}
+
+/* --------- 6.2 Features ---------- */
+
+.features.row {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.features div:nth-child(4) {
+    clear: both;
+}
+
+.background{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../isaac-benhesed-onLbXleIkds-unsplash-1024x683@2x.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.background2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../istockphoto-1151597371-640x640.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.background3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../White\ Brick\ Wall\ \ Photography\ Background\ Vinyl\ Backdrops\ Vintage\ Wood\ Floor\ Photo\ Backdrops\ \ Wedding.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.background4{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../istockphoto-1151597371-640x640.jpg);
+}
+
+/* The navigation bar */
+.navbar {
+    
+    position: fixed ; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    transition: top 0.3s;
+    
+      
+
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+    
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background:#ddd;
+    
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+  
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #ddd;
+    
+  }
+  
+  /* Navbar links */
+  #navbar a {
+   
+    display: block;
+    color:black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+     padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  /*-----------------Header Elements-----------------*/
+  #header .row {
+    padding: 0 15px !important;
+}
+
+#header.nav-solid [class*="col-"] {
+    padding: 0;
+}
+
+ /*-----------------Header Elements-----------------*/
+ #header .row {
+    padding: 0 !important;
+}
+
+#header aside {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    padding-top:3px;
+    padding-right: 5px;
+}
+
+#header.nav-solid aside {
+    top: 20px;
+}
+
+#header aside ul {
+    margin-top: 0 !important;
+    padding-top: 6px;
+}
+
+#banner-content.row {
+    padding-top: 85px !important;
+}
+
+/*Navigation*/
+nav#nav-mobile ul {
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/* 4. Banner */
+/*------------------------------------------------------------------------------------------*/
+
+#banner {
+    background-size: cover;
+}
+
+#banner-content.row {
+    padding-top: 170px;
+    padding-bottom: 100px;
+}
+
+#banner h1 {
+    padding-top: 5%;
+}
+
+#banner .section-heading:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin-top: 30px;
+}
+#banner-content.row {
+    padding-top: 85px !important;
+}
+ /*-----------------Header Elements-----------------*/
+ #header .row {
+    padding: 0 !important;
+}
+
+#header aside {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    padding-top:3px;
+    padding-right: 5px;
+}
+
+#header.nav-solid aside {
+    top: 20px;
+}
+
+#header aside ul {
+    margin-top: 0 !important;
+    padding-top: 6px;
+}
+
+#banner-content.row {
+    padding-top: 85px !important;
+}
+
+/* Responsive Nav Styling */
+
+#nav-trigger {
+    display: none;
+    text-align: right;
+}
+
+#nav-trigger span {
+    display: inline-block;
+    width: 38px;
+    height: 71px;
+    color: #111;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#nav-trigger span:after {
+    font-family: "fontAwesome";
+    display: inline-block;
+    width: 38px;
+    height: 71px;
+    line-height: 75px;
+    text-align: center;
+    content: "\f0c9";
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#nav-trigger span.open:after {
+    content: "\f00d";
+}
+
+#nav-trigger span:hover, .nav-solid #nav-trigger span.open:hover, .nav-solid #nav-trigger span:hover {
+    opacity: 0.6;
+}
+
+#nav-trigger span.open, #nav-trigger span.open:hover {
+    color: #111;
+}
+
+.nav-solid #nav-trigger span.open:hover {
+    color: #999;
+}
+
+.nav-solid #nav-trigger span {
+    color: #999;
+    opacity: 1;
+}
+
+nav#nav-mobile {
+    position: relative;
+    display: none;
+}
+
+nav#nav-mobile ul {
+    display: none;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+nav#nav-mobile ul:after {
+    display: none;
+}
+
+nav#nav-mobile li {
+    margin: 0 20px;
+    float: none;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+nav#nav-mobile li:last-child {
+    border-bottom: none;
+}
+
+.nav-solid nav#nav-mobile li {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: none;
+}
+
+nav#nav-mobile a {
+    display: block;
+    padding: 12px 0;
+    color: #333;
+    width: 100%;
+    height: auto;
+    line-height: normal;
+    display: block;
+    border-bottom: none !important;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+nav#nav-mobile a:hover {
+    background: #fafafa;
+    opacity: 1;
+}

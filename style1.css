@@ -564,7 +564,7 @@ nav#nav-mobile {
 nav#nav-mobile ul {
     display: none;
     list-style-type: none;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     margin-left: -20px;

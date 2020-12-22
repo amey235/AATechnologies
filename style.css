@@ -719,7 +719,7 @@ blockquote {
     /*-----------------Header Elements-----------------*/
     #header aside {
         display: inline-block;
-        position: absolute;
+        position: fixed;
         top: 40px;
         right: 60px;
         padding-top:3px;
